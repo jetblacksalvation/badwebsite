@@ -64,10 +64,12 @@ canvas.addEventListener('click', function (event) {
     console.log(coords.length);
     if(coords.length >= 2){
         console.log("hello");
-        
+        coords = [];//you can set an array equal to an empty array 
 
         nextCheck = 0;
 
+
+        //erase everything below the forloop if it doesn't work 
         for (let i =0; i<4; i++){
 
             console.log(i);
@@ -96,7 +98,7 @@ canvas.addEventListener('click', function (event) {
                 console.log("you connected the correct wire!");
             }
         }
-        coords = [];//you can set an array equal to an empty array 
+        
     }
 });
 
